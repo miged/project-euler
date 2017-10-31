@@ -24,18 +24,18 @@ int main()
 {
     int a = MIN;
     int b = MIN;
-    int prd;
+    int product;
 
-    int pal = 0;
+    int palindrome = 0;
     int aa = 0;
     int bb = 0;
 
     while (b != MAX) {
-        prd = a * b;
+        product = a * b;
 
-        // Checks for a greater palindome
-        if (reverse(prd) == prd && prd > pal) {
-            pal = prd;
+        // Checks for a greater palindrome
+        if (reverse(product) == product && product > palindrome) {
+            palindrome = product;
             aa = a;
             bb = b;
         }
@@ -49,5 +49,5 @@ int main()
         }
     };
 
-    std::cout << pal << " = " << aa << " * " << bb;
+    std::cout << palindrome << " = " << aa << " * " << bb;
 }

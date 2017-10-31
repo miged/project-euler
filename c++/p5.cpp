@@ -11,14 +11,14 @@ no remainder) by all of the numbers from 1 to 20?
 
 int main()
 {
-    int a = 1;
+    int num = 1;
 
     for (int i = 1; i < MAX; i++) {
-        if (a % i != 0) {
-            a++;
+        if (num % i != 0) {
+            num++;
             i = 1;
         }
     }
 
-    std::cout << a;
+    std::cout << num;
 }
