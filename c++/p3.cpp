@@ -18,5 +18,5 @@ int main()
         }
     }
 
-    std::cout << i;
+    std::cout << highest;
 }
